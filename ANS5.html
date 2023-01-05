@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPD_Solution 5</title>
+</head>
+<body>
+    <Script>
+        // a. declare array
+
+        
+        var fruits = new Array("Apple", "Orange", "Plum");
+         fruits[0] = "Apple"
+         fruits[1] = "Orange"
+         fruits[2] = "Plum"
+         document.write(fruits +"<br>");
+
+        //add items
+
+        fruits.push("Pear");
+        document.write(fruits  +"<br>");
+
+        //Delete an item
+        fruits.pop();
+        document.write(fruits +"<br>");
+
+
+        //d. add a particular index 
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        document.write(fruits +"<br>");
+        //e. delete from a particular index
+        fruits.splice(2, 1);
+        document.write(fruits +"<br>");
+        
+        for (i=0;i<fruits.length;i++){  
+       document.write(fruits[i] + "<br>"); 
+        }
+    </Script>
+</body>
+</html>
